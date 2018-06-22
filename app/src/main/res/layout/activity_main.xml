@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:background="#ecf0f1"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -12,14 +12,26 @@
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/I_Am"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:text="@string/title"
-        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:text="@string/title1"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/I_Am"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:text="@string/title2"
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -27,6 +39,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="73dp"
+        android:layout_marginBottom="13dp"
         app:srcCompat="@drawable/coal" />
 </RelativeLayout>
